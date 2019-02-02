@@ -53,7 +53,7 @@ Documentation</a> and the models are described in the
     output_file_tree = null;
     jQuery('#submit').html('<span class="fa fa-cog"></span> Waiting for Results <span class="fa fa-cog"></span>');
     jQuery('#submit').prop('disabled', true);
-    jQuery.ajax('//lindat.mff.cuni.cz/services/udpipe/api/process',
+    jQuery.ajax('//udpipe.nisim.gq/ud/process',
            {data: form_data ? form_data : options, processData: form_data ? false : true,
             contentType: form_data ? false : 'application/x-www-form-urlencoded; charset=UTF-8',
             dataType: "json", type: "POST", success: function(json) {
@@ -234,7 +234,7 @@ Documentation</a> and the models are described in the
   }
 
   jQuery(document).ready(function() {
-    jQuery.ajax('//lindat.mff.cuni.cz/services/udpipe/api/models',
+    jQuery.ajax('//udpipe.nisim.gq/ud/models',
                 {dataType: "json", success: function(json) {
       models = json.models;
       updateModels();
@@ -245,7 +245,7 @@ Documentation</a> and the models are described in the
              if (value in models) {
                processed(value);
              } else {
-               jQuery.ajax('//lindat.mff.cuni.cz/services/udpipe/api/process',
+               jQuery.ajax('//udpipe.nisim.gq/ud/process',
                       {dataType: "json", data: {model: value, data: ''}, type: "POST", success: function(json) {
                         if ('model' in json) processed(json.model);
                       }});
