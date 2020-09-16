@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>UDPipe</title>
+    <title>UDPipe - kvak</title>
     <meta charset="utf-8">
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -32,11 +32,11 @@
         <ul class="breadcrumb">
           <li><a href="//lindat.mff.cuni.cz/">LINDAT/CLARIN</a></li>
           <li><a href="//lindat.mff.cuni.cz/services/">Services</a></li>
-          <li class="active">UDPipe</li>
+          <li class="active">UDPipe - kvak</li>
         </ul>
 
         <!-- Service title -->
-        <h1 class="text-center">UDPipe</h1>
+        <h1 class="text-center">UDPipe - kvak</h1>
 
         <!-- menu -->
         <ul class="nav nav-tabs text-center" style="margin-bottom: 10px">
